@@ -9,7 +9,8 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    /* Remove the white background */
+    /* background-color: #fff; */
     border-radius: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,7 +20,7 @@ h1 {
 }
 
 p {
-    color: #666;
+    color: #000; /* Set text color to black */
 }
 
 input[type="text"]{
@@ -45,4 +46,10 @@ button:hover {
 /* Add styles for the redirecting state */
 button.redirecting {
     background-color: #ccc; /* Change button color */
+}
+
+/* Additional styles for index.html background */
+body {
+    background: url('Flowy.jpg') repeat;
+    color: #000; /* Set text color to black for better visibility */
 }
