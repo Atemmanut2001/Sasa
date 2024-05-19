@@ -39,4 +39,10 @@ button {
 
 button:hover {
     background-color: #0056b3;
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+/* Add styles for the redirecting state */
+button.redirecting {
+    background-color: #ccc; /* Change button color */
 }
