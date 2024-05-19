@@ -3,7 +3,6 @@ body {
     padding: 0;
     background: url('Blue1.jpg') repeat;
     background-size: 25%; /* Reduce size by 75% */
-   
     background-color: #b4c2f5; /* Ensure the floral image blends with the background color */
     font-family: Arial, sans-serif;
 }
