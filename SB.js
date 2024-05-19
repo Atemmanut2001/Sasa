@@ -3,7 +3,7 @@ function checkAnswer() {
 
 //Replace "sunday" with the correct answer
 if(answer === "sunday") {
-    window.location.href = "surprise.html";
+    window.location.href = "Sasa.html";
 } else {
     document.getElementById("message").innerHTML = "Inocrrect answer. PLease try again.";
 }
