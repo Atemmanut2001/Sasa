@@ -23,8 +23,8 @@ p {
     color: #000; /* Set text color to black */
 }
 
-input[type="text"]{
-    width: 100%;
+input[type="text"] {
+    width: calc(100% - 20px); /* Reduce width slightly */
     padding: 10px;
     margin-bottom: 10px;
 }
