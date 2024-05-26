@@ -24,7 +24,7 @@ p {
 }
 
 input[type="text"] {
-    width: calc(100% - 20px); /* Reduce width slightly */
+    width: calc(80%); /* Set width to 80% */
     padding: 10px;
     margin-bottom: 10px;
 }
