@@ -51,5 +51,7 @@ button.redirecting {
 /* Additional styles for index.html background */
 body {
     background: url('Pinkg.jpeg') repeat;
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-attachment: fixed; /* Fix the background to maintain its position during scrolling */
     color: #000; /* Set text color to black for better visibility */
 }
