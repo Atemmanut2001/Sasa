@@ -1,32 +1,36 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0%;
-    background-color: #f0f0f0;
+    padding: 0;
+    background: url('Pinkg.jpeg') repeat;
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-attachment: fixed; /* Fix the background to maintain its position during scrolling */
+    background-color: #f0f0f0; /* Fallback background color */
+    color: #000; /* Set text color to black for better visibility */
 }
 
 .container {
     max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    /* Remove the white background */
-    /* background-color: #fff; */
-    border-radius: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Reduce the top and bottom margin */
+    padding: 10px;
+    text-align: center; /* Center the content */
 }
 
 h1 {
-    text-align: center;
-    color: #333;
-}
-
-p {
     color: #000; /* Set text color to black */
+    font-size: 2.5em; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduce space below the heading */
 }
 
-input[type="text"] {
-    width: calc(80%); /* Set width to 80% */
-    padding: 10px;
-    margin-bottom: 10px;
+.image-container {
+    margin: 10px auto; /* Adjust the margin to reduce space */
+}
+
+img {
+    width: 80%; /* Adjust the width to ensure the image is larger */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 button {
@@ -36,22 +40,14 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px; /* Add a small margin above the button */
 }
 
 button:hover {
     background-color: #0056b3;
-    cursor: pointer; /* Add cursor pointer on hover */
 }
 
 /* Add styles for the redirecting state */
 button.redirecting {
     background-color: #ccc; /* Change button color */
-}
-
-/* Additional styles for index.html background */
-body {
-    background: url('Pinkg.jpeg') repeat;
-    background-size: cover; /* Ensure the background covers the entire screen */
-    background-attachment: fixed; /* Fix the background to maintain its position during scrolling */
-    color: #000; /* Set text color to black for better visibility */
 }

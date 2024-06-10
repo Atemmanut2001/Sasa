@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB - Nya</title>
+    <link rel="stylesheet" href="SB.css">
+    <style>
+        /* Additional styles for Nya.html background */
+        body {
+            background: url('Pinkbush.jpeg') repeat;
+            background-size: cover; /* Ensure the background covers the entire screen */
+            background-attachment: fixed; /* Fix the background to maintain its position during scrolling */
+            color: #000; /* Set text color to black for better visibility */
+        }
+
+        /* Styles for the container */
+        .text-container {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto; /* Center the container */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the text */
+        }
+
+        /* Styles for the riddle */
+        .riddle {
+            font-size: 18px; /* Increase font size by 1 point */
+            font-weight: bold; /* Make font bold */
+            margin-bottom: 20px; /* Add some space below the riddle */
+        }
+
+        /* Styles for the input and button */
+        input[type="text"] {
+            padding: 10px;
+            width: calc(100% - 22px); /* Adjust width to account for padding and border */
+            margin-bottom: 20px; /* Add some space below the input */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #message {
+            margin-top: 20px; /* Add some space above the message */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <p class="riddle">Can you solve this riddle to unlock and enter?</p>
+        <p class="riddle">The tombstones rolled away at my arrival,<br>
+        I belong to you, yet others use me more,<br>
+        Those before me are celebrated and those after me are despised,<br>
+        In their embrace, I bear both praise and disdain.<br>
+        In me, find solace, amidst the laughter.<br>
+        What am I? Can you say?</p>
+        <input type="text" id="answer" placeholder="Enter your answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="message"></p>
+    </div>
+
+    <script src="SB.js"></script>
+</body>
+</html>
+
+

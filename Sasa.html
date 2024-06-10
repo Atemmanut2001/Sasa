@@ -5,11 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Girl in the Light Blue Sweatshirt</title>
     <link rel="stylesheet" href="Sasa.css">
+    <style>
+        .subheading {
+            text-align: center;
+            margin-bottom: 20px; /* Add margin below the subheading */
+        }
+        .subheading-container {
+            display: inline-block; /* Ensure the container only wraps the text */
+            background-color: rgba(255, 255, 255, 0.8); /* Background color for the subheading container with opacity */
+            padding: 5px 10px; /* Add some padding to the container */
+            border-radius: 5px; /* Add border radius for rounded corners */
+        }
+        .credit-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .credit-button button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>The Girl in the Light Blue Sweatshirt</h1>
-        <div id="poem"></div> <!-- Placeholder for the poem -->
+        <div id="poem">
+            <p>Sunday, one word, infinite meanings,</p>
+            <p>The day that Jesus arose,</p>
+            <p>A day of rest and companionship,</p>
+            <p>The end of the week to some, and the start of it to others,</p>
+            <p>But my favourite meaning of it is you.</p>
+            <p>You remind me of what it means to love, and to be loved.</p>
+            <p>For today, I hope you stay long enough to watch the world mirror the love you put into it.</p>
+            <p>Wishing you a birthday as special as you are, and may you know how much you’re loved in each and every way.</p>
+            <p>And like the sun, may your days get brighter every year,</p>
+            <p>For God’s gifts are beautiful, and you are the most beautiful one.</p>
+        </div>
+    </div>
+
+    <!-- Subheading with emojis -->
+    <div class="subheading">
+        <div class="subheading-container"> <!-- Container for the subheading -->
+            <h2>To more memories💀🫶</h2>
+        </div>
+    </div>
+
+    <div id="polaroid-gallery"></div>
+
+    <!-- Credit Button -->
+    <div class="credit-button">
+        <button onclick="window.location.href='Credit.html'">&#x27A1;&#xFE0F;</button>
+    </div>    
+
+    <div id="modal">
+        <img id="modal-image" class="enlarged-image">
+        <span id="close-modal" class="close-button">&times;</span>
     </div>
     <script src="Sasa.js"></script>
 </body>

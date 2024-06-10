@@ -2,15 +2,15 @@ body {
     margin: 0;
     padding: 0;
     background: url('Blue1.jpg') repeat;
-    background-size: 25%; /* Reduce size by 75% */
-    background-color: #b4c2f5; /* Ensure the floral image blends with the background color */
+    background-size: 25%;
+    background-color: #b4c2f5;
     font-family: Arial, sans-serif;
 }
 
 .container {
     text-align: center;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    background-color: rgba(255, 255, 255, 0.8);
     margin: 50px auto;
     max-width: 600px;
     border-radius: 15px;
@@ -22,4 +22,63 @@ h1 {
     color: #333;
 }
 
+/* New styles for the poem */
+.poem {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+/* Styles for the Polaroid images */
+#polaroid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.polaroid {
+    width: 100%;
+    max-width: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+
+.polaroid .caption {
+    display: none;
+}
+
+/* Styles for image enlargement */
+.enlarged-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.enlarged-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
