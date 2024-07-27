@@ -9,7 +9,11 @@ const imageNames = [
     "SB21.jpg", "SB22.jpg", "SB23.jpg", "SB24.jpg", "SB25.jpg",
     "SB27.jpg", "SB28.jpg", "SB29.jpg", "SB30.jpg", "SB31.jpg",
     "SB32.jpg", "SB33.jpg", "SB34.jpg", "SB35.jpg", "SB36.jpg",
-    "SB37.jpg", "SB38.jpg", "SB39.jpg"
+    "SB37.jpg", "SB38.jpg", "SB39.jpg", "SB40.jpg", "SB41.jpg",
+    "SB42.jpg", "SB43.jpg", "SB44.jpg", "SB45.jpg", "SB46.jpg",
+    "SB47.jpg", "SB48.jpg", "SB49.jpg", "SB50.jpg", "SB51.jpg",
+    "SB52.jpg", "SB53.jpg", "SB54.jpg", "SB55.jpg", "SB56.jpg",
+    "SB57.jpg", "SB58.jpg", "SB59.jpg"
 ];
 
 // Function to create polaroid gallery
