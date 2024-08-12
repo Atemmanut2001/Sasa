@@ -17,42 +17,32 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 2em;
-    color: #333;
-}
-
-/* New styles for the poem */
-.poem {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Styles for the Polaroid images */
-#polaroid-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    padding: 20px;
-}
-
 .polaroid {
     width: 100%;
     max-width: 150px;
-    position: relative;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center;
+    border: 5px solid #fff; /* White border around the image */
+    border-radius: 10px; /* Rounded corners for the border */
+    background: #fff; /* Ensure background is white */
+    overflow: hidden; /* Ensure content fits within border */
 }
 
 .polaroid img {
     width: 100%;
     height: auto;
-    border: 5px solid #fff;
     border-radius: 10px;
 }
 
 .polaroid .caption {
-    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    padding: 5px; /* Space around the text */
+    background: #fff; /* Same white as border to blend in */
+    border-top: 1px solid #ddd; /* Optional: adds a subtle border between image and caption */
+    width: 100%; /* Ensure the caption spans the full width */
 }
 
 /* Styles for image enlargement */
@@ -82,3 +72,24 @@ h1 {
     cursor: pointer;
     font-size: 24px;
 }
+
+/* Ensure the grid layout for Polaroid gallery */
+#polaroid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+/* Style adjustments for any new content or changes */
+.poem {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
